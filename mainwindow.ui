@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1039</width>
+    <height>437</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>350</y>
+      <width>481</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="WindowTitle">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>11</y>
+      <width>1021</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 900 22pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Prey-Predator Simulation</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>1001</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle1">
+         <property name="text">
+          <string>Enter map width</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputWidth"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle2">
+         <property name="text">
+          <string>Enter map height</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputHeight"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle3">
+         <property name="text">
+          <string>Enter start amount for deers</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputDeersAmount"/>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle4">
+         <property name="text">
+          <string>Enter start amount for tigers</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputTigersAmount"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle6">
+         <property name="text">
+          <string>Enter age when tiger dies</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputTigerDieAge">
+         <property name="baseSize">
+          <size>
+           <width>100</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle7">
+         <property name="text">
+          <string>Enter the frequency with which a deer
+ can give birth </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputDeerBirthAge"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="3">
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle8">
+         <property name="text">
+          <string>Enter the frequency with which a tiger
+ can give birth </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputTigerBirthAge"/>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QLabel" name="PropertiInputTitle5">
+         <property name="text">
+          <string>Enter age when deer dies</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="inputDeerDieAge"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1039</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
